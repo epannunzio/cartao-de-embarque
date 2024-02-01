@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+body {
+  background: linear-gradient(#ff8c8c, #9e6363) no-repeat;
+  height: 691px;
+}
+
+.container-cartao {
+  width: 327px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 30px;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plain {
+  padding-left: 30px;
+}
+
+.card-number,
+.card-date,
+.card-from,
+.card-to,
+.card-passenger,
+.card-poltrona,
+.card-hour {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  color: #646464;
+}
+
+.card-date {
+  text-align: end;
+}
+
+.card-from span:first-child,
+.card-to span:first-child {
+  font-size: 48px;
+}
+
+.card-to span,
+.card-poltrona span {
+  justify-content: end;
+}
+
+.card-number span,
+.card-date span,
+.card-from span,
+.card-to span,
+.card-passenger span,
+.card-poltrona span {
+  display: flex;
+  font-weight: bold;
+  font-size: 19px;
+  color: #000;
+}
+
+.card-hour span {
+  display: flex;
+  font-weight: bold;
+  font-size: 19px;
+  color: white;
+  background-color: rgb(255, 0, 76);
+  width: 70%;
+  height: 20px;
+  padding: 6px;
+  margin-top: 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.pontilhado {
+  display: flex;
+  border-bottom: 2px dashed #646464;
+  width: 100%;
+  height: 20px;
+
+  span:nth-child(2) {
+    position: relative;
+    left: 305px;
+  }
+
+  span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #f08989;
+    border-radius: 50%;
+    position: relative;
+    right: 48px;
+  }
+}
+
+.container-infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  position: relative;
+  top: 15px;
+  font-size: 20px;
+}
